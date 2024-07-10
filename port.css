@@ -34,6 +34,8 @@ main{
 
 header {
     padding-bottom: 2rem;
+    position: fixed;
+    z-index: 9999;
 }
 
 header h1 {
@@ -205,6 +207,10 @@ footer {
 
 /*スマホ用 599px以下〜*/
 @media all and (max-width: 430px) {
+
+    header{
+        position: fixed;
+    }
     
     
     header h1 {
