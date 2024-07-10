@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/************** base ****************/
+
+* {
+   margin:  0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+}
+
+img {
+   width: 50%;
+   padding-top: 7rem;
+   height: auto;
+}
+
+/************** layout ****************/
+
+main{
+   padding: 1rem;
+   flex-grow: 1;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.main-visual {
+   padding-top: 5rem;
+   text-align: center;
+}
+
+body{
+    height: 100%;
+}
+
+#wrap {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+header {
+   background: antiquewhite;
+}
+
+header h1 {
+   font-size: clamp(25px, 2.0vw, 40px);
+   color: #316745;
+   text-align: center;
+   padding-top: 1.5rem;
+   position: absolute;
+   top: 0;
+   left: 1rem;
+}
+
+div{
+    background-color: #fffff9;
+}
+
+.text{
+   color:#726d40;
+   padding-top: 2rem;
+   text-align: center;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+}
+
+nav{
+    position: fixed;
+    top: 1.5rem;
+    right: 1rem;
+}
+
+nav ul {
+   margin: 1px;
+   font-size: 20px;
+}
+
+nav ul li {
+   display: inline-block;
+   margin: 0 12px;
+}
+  
+nav ul li a {
+   font-weight: bold;
+   color: #316745;
+}
+
+section {
+   background: #FFF;
+   padding: 20px;
+}
+
+footer {
+   font-size: 14px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   background: #6b7b6e;
+   color: #FFF;
+   text-align: center;
+   padding: 0.5rem;
+   width: 100%;
+}
+
+/*コンピュータ用*/
+ 
+/*タブレット用 1024px以下〜*/
+@media all and (max-width: 1024px) {
+ 
+}
+ 
+/*スマホ用 599px以下〜*/
+@media all and (max-width: 599px) {
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/************** base ****************/
+
+* {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+
+}
+
+/************** layout ****************/
+
+main {
+   padding: 2rem;
+   padding-top: 4rem;
+   flex-grow: 1;
+   max-width: 1200px;
+   margin: 0 auto;
+   grid-template-columns: 1fr;
+}
+
+#wrap {
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 350;
+   font-style: normal;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+
+.pet {
+   width: 25%;
+   border-radius: 50%;
+   margin: 10px;
+   padding-top: 1rem;
+}
+
+
+.neko {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 6px;
+}
+
+.neko img {
+   width: 100%;
+   flex: 1;
+}
+
+body {
+   height: 100%;
+}
+
+header h1 {
+   font-size: clamp(25px, 2.0vw, 40px);
+   color: #316745;
+   text-align: center;
+   padding-top: 1.5rem;
+   position: absolute;
+   top: 0;
+   left: 1rem;
+   
+}
+
+div {
+   background-color: #fffff9;
+   text-align: center;
+}
+
+p.border{
+   padding-top: 2rem;
+   border-bottom: 2px dotted black;
+}
+
+.text {
+   color: #00552e;
+   font-size: 23px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 450;
+   font-style: normal;
+   padding-bottom: 0.2rem;
+   padding-top: 7rem
+}
+
+nav {
+   font-size: clamp(15px, 2.0vw, 25px);
+   position: absolute;
+   top: 1.5rem;
+   right: 1rem;
+}
+
+nav ul {
+   margin: 1px;
+   font-size: 20px;
+}
+
+nav ul li {
+   display: inline-block;
+   margin: 0 12px;
+}
+
+nav ul li a {
+   font-weight: bold;
+   color: #316745;
+}
+
+section {
+   background: #FFF;
+   padding: 20px;
+}
+
+footer  {
+   font-size: 14px;
+   font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   background: #6b7b6e;
+   color: #FFF;
+   text-align: center;
+   padding: 0.5rem;
+   width: 100%;
+}
+
+/*タブレット用*/
+@media all and (min-width: 600px) {
+   .neko {
+   grid-template-columns: 1fr 1fr;
+   }
+}
+
+/*コンピュータ用*/
+@media all and (min-width: 1000px) {
+   main {
+   grid-template-columns: 1fr 1fr;
+}
+
+   .neko{
+      grid-template-columns: 1fr 1fr 1fr;
+}
+}
